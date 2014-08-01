@@ -3,6 +3,7 @@
 namespace kotchuprik\Fotorama;
 
 use yii\helpers\Html;
+use yii\base\InvalidConfigException;
 
 class Widget extends \yii\base\Widget
 {
@@ -19,7 +20,7 @@ class Widget extends \yii\base\Widget
     public function init()
     {
         if (empty($this->version)) {
-            throw new Exception('You must set fotorama version.');
+            throw new InvalidConfigException('You must set fotorama version.');
         }
 
         parent::init();
@@ -37,7 +38,9 @@ class Widget extends \yii\base\Widget
             $this->htmlOptions['data-' . $option] = $value;
         }
 
+        Asset::$version = $this->version;
         Asset::register($this->getView());
+
         echo Html::beginTag($this->tagName, $this->htmlOptions);
     }
 
@@ -49,7 +52,3 @@ class Widget extends \yii\base\Widget
     }
 }
 
-class Exception extends \Exception
-{
-
-}
