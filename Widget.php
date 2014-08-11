@@ -1,6 +1,6 @@
 <?php
 
-namespace kotchuprik\Fotorama;
+namespace kotchuprik\fotorama;
 
 use yii\helpers\Html;
 use yii\base\InvalidConfigException;

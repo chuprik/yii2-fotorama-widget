@@ -1,6 +1,6 @@
 <?php
 
-namespace kotchuprik\Fotorama;
+namespace kotchuprik\fotorama;
 
 class Asset extends \yii\web\AssetBundle
 {
