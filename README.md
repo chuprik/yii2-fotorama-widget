@@ -7,7 +7,7 @@ This widget is the wrapper for the [Fotorama](http://fotorama.io/).
 To call the widget you should use:
 
 ```php
-<?php $widget = \kotchuprik\Fotorama\Widget::begin([
+<?php $widget = \kotchuprik\fotorama\Widget::begin([
     // you must specify the version (available versions http://cdnjs.com/libraries/fotorama)
     'version' => '4.5.2',
 ]); ?>
