@@ -20,7 +20,7 @@ To call the widget you should use:
 To call the widget with the Fotorama [options](http://fotorama.io/customize/) you should use:
 
 ```php
-<?php $widget = \kotchuprik\Fotorama\Widget::begin([
+<?php $widget = \kotchuprik\fotorama\Widget::begin([
     'version' => '4.5.2',
     'options' => [
         'nav' => 'thumbs',
